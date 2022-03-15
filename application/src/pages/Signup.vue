@@ -80,6 +80,7 @@ export default {
       if ("email" in this.errors || "password" in this.errors) {
         return false;
       }
+      //make spinner true
       this.showLoading(true);
       //signup registration
       try {
@@ -92,8 +93,6 @@ export default {
         this.showLoading(false);
       }
       this.showLoading(false);
-      this.$router.push("/page");
-
       //make spinner false
     },
   },
